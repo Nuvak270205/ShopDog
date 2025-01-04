@@ -122,7 +122,8 @@
     .items__body-heading{
         font-size: 14px;
     }
-    /* Phần section2 */
+    /* Phần section2 và section5*/
+    .section5__body,
     .section2 .container{
         height: 640px;
     }
@@ -219,5 +220,40 @@
     }
     .section4__end-list{
         order: 3;
+    }
+    /* Phần section 6 */
+    .section6 .container{
+        justify-content: space-between;
+        gap: 12px;
+    }
+    .section6__filter-body{
+        display: none;
+    }
+    .section6__content-heading{
+        width: unset;
+        order: 1;
+    }
+    .section6__filter-header{
+        width: unset;
+        order: 2;
+    }
+    .section6__content{
+        order: 3;
+    }
+    .section6__filter-header{
+        font-size: 16px;
+        height: 24px;
+    }
+    .section6__content-body{
+        gap: 12px;
+    }
+    .section6__content-body .body__items{
+        width: calc(50% - 6px);
+    }
+
+
+    /* Phần section7 */
+    .section7{
+        min-width: 382px;
     }
 }
