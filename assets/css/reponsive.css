@@ -104,6 +104,12 @@
         gap: 12px;
         margin-top: 20px;
     }
+    .content__text-node{
+        font-size: 14px;
+    }
+    .content__text-heading{
+        font-size: 20px;
+    }
     .body__items{
         width: calc(50% - 6px);
     }
@@ -255,5 +261,56 @@
     /* Phần section7 */
     .section7{
         min-width: 382px;
+    }
+    /* header main */
+    .header__main{
+        width: 414px;
+        margin: 0 auto;
+    }
+    /* Phần section8 */
+    .section8 .container{
+        width: 414px;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+        gap: 22px;
+    }
+    .section8__img{
+        width: 100%;
+    }
+    .section8__img-button1{
+        left: 11px;
+        top: 164px;
+    }
+    .section8__img-button2{
+        right: 11px;
+        top: 164px;
+    }
+    .section8__img-list{
+        gap: 8px;
+    }
+    .section8__list-image{
+        width: 68px;
+        height: 68px;
+    }
+    .section8__body{
+        padding: 20px 16px;
+    }
+    .section8__breadcrumb{
+        margin-top: 14px;
+    }
+    .section8__body-button{
+        font-size: 14px;
+    }
+    .section8__button4{
+        flex: 1;
+    }
+    .section8__body-button{
+        gap: 27px;
+    }
+    /* Phần section9 */
+    .section9 .container{
+        width: 414px;
+        padding: 24px 0 24px 17px;
     }
 }
