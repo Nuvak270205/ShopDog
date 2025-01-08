@@ -312,6 +312,8 @@
     }
     .section6__filter-body.open{
         display: block;
+        display: flex;
+        gap : 12px;
     }
 
 
