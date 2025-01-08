@@ -53,7 +53,56 @@
     .sub__menu-list{
         display: none;
     }
+    .sub__menu-list.open{
+        display: block;
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.5);
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    .menu__body{
+        flex-direction: column;
+        position: absolute;
+        background-color: #FCEED5;
+        width: 200px;
+        height: 100%;
+        animation: identifier ease 0.5s;
+    }
+    .sub__menu-list .shared{
+        flex: 0;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    }
     .sub__search{
+        display: none;
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.5);
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 2;
+    }
+    .fa-solid.fa-xmark.RegisterNow__icon{
+        display: block;
+        position: absolute;
+        right: 12px;
+        top: 12px;
+        cursor: pointer;
+    }
+    .sub__search-input{
+        position: absolute;
+        left: 24px;
+        right: 24px;
+        top: 40px;
+        z-index: 3;
+        animation: animation ease 0.5s; 
+    }
+    .sub__search.open{
+        display: block;
+    }
+    .sub__search-link{
         display: none;
     }
     .header .sub{
@@ -127,6 +176,10 @@
     }
     .items__body-heading{
         font-size: 14px;
+    }
+    .section1__button-btn{
+        display: block;
+        margin-top: 16px;
     }
     /* Phần section2 và section5*/
     .section5__body,
@@ -234,6 +287,7 @@
     }
     .section6__filter-body{
         display: none;
+        order: 3;
     }
     .section6__content-heading{
         width: unset;
@@ -244,7 +298,7 @@
         order: 2;
     }
     .section6__content{
-        order: 3;
+        order: 4;
     }
     .section6__filter-header{
         font-size: 16px;
@@ -255,6 +309,9 @@
     }
     .section6__content-body .body__items{
         width: calc(50% - 6px);
+    }
+    .section6__filter-body.open{
+        display: block;
     }
 
 
@@ -312,5 +369,24 @@
     .section9 .container{
         width: 414px;
         padding: 24px 0 24px 17px;
+    }
+
+    @keyframes identifier {
+        from{
+            transform: translateX(-100px); ;
+        }
+        to{
+            transform: translateX(0);
+        }
+    }
+    @keyframes animation {
+        from {
+            opacity: 0;
+            transform: translateY(-100px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
     }
 }

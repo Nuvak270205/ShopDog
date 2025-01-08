@@ -20,21 +20,25 @@
                         <div class="sub__menu-logo-i">
                             <img class="sub__menu-logo-img" src="./assets/img/Frame.svg" alt="logo">
                         </div>
-                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <i class="fa-solid fa-magnifying-glass js__search"></i>
                     </div>
                     <div class="sub__menu-list">
-                        <div class="sub__menu-home shared"><b>Trang chủ</b></div>
-                        <div class="sub__menu-category shared"><b>Danh mục</b></div>
-                        <div class="sub__menu-about shared"><b>Giới thiệu</b></div>
-                        <div class="sub__menu-contact shared"><b>Liên hệ</b></div>
+                        <i class="fa-solid fa-xmark RegisterNow__icon"></i>
+                        <div class="menu__body">
+                            <div class="sub__menu-home shared"><b>Trang chủ</b></div>
+                            <div class="sub__menu-category shared"><b>Danh mục</b></div>
+                            <div class="sub__menu-about shared"><b>Giới thiệu</b></div>
+                            <div class="sub__menu-contact shared"><b>Liên hệ</b></div>
+                        </div>
                     </div>
                 </div>
-                <div class="sub__search shared">
+                <div class="sub__search">
+                    <i class="fa-solid fa-xmark RegisterNow__icon"></i>
                     <div class="sub__search-input">
                         <i class="fa-solid fa-magnifying-glass sub__search-icon"></i>
                         <input class="sub__search-container" type="text" placeholder="Nhập từ khóa...">
                     </div>
-                    <div class="sub__search-link shared"><b>Tham gia cộng đồng</b></div>
+                    <div class="sub__search-link"><b>Tham gia cộng đồng</b></div>
                 </div>
             </div>
         </div>
@@ -88,10 +92,10 @@
                         </div>
                         <div class="body__check-node">
                             <label>
-                                <input type="radio" id="species1" name="gioitinh"> Đực
+                                <input type="radio" id="species1" name="gioitinh" value="Đực"> Đực
                             </label>
                             <label>
-                                <input type="radio" id="species2" name="gioitinh"> Cái
+                                <input type="radio" id="species2" name="gioitinh" value="Cái"> Cái
                             </label>
                         </div>
                     </div>
@@ -104,13 +108,13 @@
                         </div>
                         <div class="body__check-node">
                             <label>
-                                <input type="radio" id="color1" name="mausac"> Xám
+                                <input type="radio" id="color1" name="mausac" value="Xám"> Xám
                             </label>
                             <label>
-                                <input type="radio" id="color2" name="mausac"> Đen
+                                <input type="radio" id="color2" name="mausac" value="Đen"> Đen
                             </label>
                             <label>
-                                <input type="radio" id="color3" name="mausac"> Trắng
+                                <input type="radio" id="color3" name="mausac" value="Trắng"> Trắng
                             </label>
                         </div>
                     </div>
@@ -123,13 +127,13 @@
                         </div>
                         <div class="body__check-node">
                             <label>
-                                <input type="radio" id="size1" name="kichthuoc"> Nhỏ
+                                <input type="radio" id="size1" name="kichthuoc" value="Nhỏ"> Nhỏ
                             </label>
                             <label>
-                                <input type="radio" id="size2" name="kichthuoc"> Vừa
+                                <input type="radio" id="size2" name="kichthuoc" value="Vừa"> Vừa
                             </label>
                             <label>
-                                <input type="radio" id="size3" name="kichthuoc"> Lớn
+                                <input type="radio" id="size3" name="kichthuoc" value="Lớn"> Lớn
                             </label>
                         </div>
                     </div>
@@ -143,10 +147,12 @@
                                 <div class="items__body">
                                     <h4 class="items__body-heading">MO231 - Pomeranian Trắng</h4>
                                     <ul class="items__body-lists">
-                                        <li class="items__body-list">Giống: Đực</li>
+                                        <li class="items__body-list js__sex">Giống: Đực</li>
                                         <li class="items__body-list">Tuổi: 02 tháng</li>
                                     </ul>
                                     <h4 class="items__body-price">Giá: 6.900.000 VND</h4>
+                                    <h4 class="items__body-color">Trắng</h4>
+                                    <h4 class="items__body-size">Nhỏ</h4>
                                 </div>
                             </div>
                         </a>
@@ -156,10 +162,12 @@
                                 <div class="items__body">
                                     <h4 class="items__body-heading">MO502 - Poodle Tiny Vàng</h4>
                                     <ul class="items__body-lists">
-                                        <li class="items__body-list">Giống: Cái</li>
+                                        <li class="items__body-list js__sex">Giống: Cái</li>
                                         <li class="items__body-list">Tuổi: 02 tháng</li>
                                     </ul>
                                     <h4 class="items__body-price">Giá: 3.900.000 VND</h4>
+                                    <h4 class="items__body-color">Vàng</h4>
+                                    <h4 class="items__body-size">Nhỏ</h4>
                                 </div>
                             </div>
                         </a>
@@ -169,10 +177,12 @@
                                 <div class="items__body">
                                     <h4 class="items__body-heading">MO102 - Poodle Tiny Sepia</h4>
                                     <ul class="items__body-lists">
-                                        <li class="items__body-list">Giống: Đực</li>
+                                        <li class="items__body-list js__sex">Giống: Đực</li>
                                         <li class="items__body-list">Tuổi: 02 tháng</li>
                                     </ul>
                                     <h4 class="items__body-price">Giá: 4.000.000 VND</h4>
+                                    <h4 class="items__body-color">Nâu</h4>
+                                    <h4 class="items__body-size">Nhỏ</h4>
                                 </div>
                             </div>
                         </a>
@@ -182,10 +192,12 @@
                                 <div class="items__body">
                                     <h4 class="items__body-heading">MO512 - Alaskan Malamute</h4>
                                     <ul class="items__body-lists">
-                                        <li class="items__body-list">Giống: Đực</li>
+                                        <li class="items__body-list js__sex">Giống: Đực</li>
                                         <li class="items__body-list">Tuổi: 03 tháng</li>
                                     </ul>
                                     <h4 class="items__body-price">Giá: 8.900.000 VND</h4>
+                                    <h4 class="items__body-color">Xám</h4>
+                                    <h4 class="items__body-size">Vừa</h4>
                                 </div>
                             </div>
                         </a>
@@ -195,10 +207,12 @@
                                 <div class="items__body">
                                     <h4 class="items__body-heading">MO231 - Pombroke Corgi</h4>
                                     <ul class="items__body-lists">
-                                        <li class="items__body-list">Giống: Đực</li>
+                                        <li class="items__body-list js__sex">Giống: Đực</li>
                                         <li class="items__body-list">Tuổi: 02 tháng</li>
                                     </ul>
                                     <h4 class="items__body-price">Giá: 7.900.000 VND</h4>
+                                    <h4 class="items__body-color">Trắng</h4>
+                                    <h4 class="items__body-size">Nhỏ</h4>
                                 </div>
                             </div>
                         </a>
@@ -208,10 +222,12 @@
                                 <div class="items__body">
                                     <h4 class="items__body-heading">MO502 - Pombroke Corgi</h4>
                                     <ul class="items__body-lists">
-                                        <li class="items__body-list">Giống: Cái</li>
+                                        <li class="items__body-list js__sex">Giống: Cái</li>
                                         <li class="items__body-list">Tuổi: 02 tháng</li>
                                     </ul>
                                     <h4 class="items__body-price">Giá: 9.000.000 VND</h4>
+                                    <h4 class="items__body-color">Đen</h4>
+                                    <h4 class="items__body-size">Nhỏ</h4>
                                 </div>
                             </div>
                         </a>
@@ -221,10 +237,12 @@
                                 <div class="items__body">
                                     <h4 class="items__body-heading">MO231 - Pomeranian Trắng</h4>
                                     <ul class="items__body-lists">
-                                        <li class="items__body-list">Giống: Cái</li>
+                                        <li class="items__body-list js__sex">Giống: Cái</li>
                                         <li class="items__body-list">Tuổi: 02 tháng</li>
                                     </ul>
                                     <h4 class="items__body-price">Giá: 6.500.000 VND</h4>
+                                    <h4 class="items__body-color">Trắng</h4>
+                                    <h4 class="items__body-size">Nhỏ</h4>
                                 </div>
                             </div>
                         </a>
@@ -234,10 +252,12 @@
                                 <div class="items__body">
                                     <h4 class="items__body-heading">MO512 - Poodle Tiny</h4>
                                     <ul class="items__body-lists">
-                                        <li class="items__body-list">Giống: Đực</li>
+                                        <li class="items__body-list js__sex">Giống: Đực</li>
                                         <li class="items__body-list">Tuổi: 02 tháng</li>
                                     </ul>
                                     <h4 class="items__body-price">Giá: 5.000.000 VND</h4>
+                                    <h4 class="items__body-color">Đen</h4>
+                                    <h4 class="items__body-size">Nhỏ</h4>
                                 </div>
                             </div>
                         </a>
@@ -247,10 +267,12 @@
                                 <div class="items__body">
                                     <h4 class="items__body-heading">MO502 - Poodle Tiny Vàng</h4>
                                     <ul class="items__body-lists">
-                                        <li class="items__body-list">Giống: Cái</li>
+                                        <li class="items__body-list js__sex">Giống: Cái</li>
                                         <li class="items__body-list">Tuổi: 02 tháng</li>
                                     </ul>
                                     <h4 class="items__body-price">Giá: 3.900.000 VND</h4>
+                                    <h4 class="items__body-color">Vàng</h4>
+                                    <h4 class="items__body-size">Nhỏ</h4>
                                 </div>
                             </div>
                         </a>
@@ -260,10 +282,12 @@
                                 <div class="items__body">
                                     <h4 class="items__body-heading">MO512 - Alaskan Malamute</h4>
                                     <ul class="items__body-lists">
-                                        <li class="items__body-list">Giống: Đực</li>
+                                        <li class="items__body-list js__sex">Giống: Đực</li>
                                         <li class="items__body-list">Tuổi: 03 tháng</li>
                                     </ul>
                                     <h4 class="items__body-price">Giá: 8.900.000 VND</h4>
+                                    <h4 class="items__body-color">Xám</h4>
+                                    <h4 class="items__body-size">Vừa</h4>
                                 </div>
                             </div>
                         </a>
@@ -273,10 +297,12 @@
                                 <div class="items__body">
                                     <h4 class="items__body-heading">MO231 - Pombroke Corgi</h4>
                                     <ul class="items__body-lists">
-                                        <li class="items__body-list">Giống: Đực</li>
+                                        <li class="items__body-list js__sex">Giống: Đực</li>
                                         <li class="items__body-list">Tuổi: 02 tháng</li>
                                     </ul>
                                     <h4 class="items__body-price">Giá: 7.900.000 VND</h4>
+                                    <h4 class="items__body-color">Trắng</h4>
+                                    <h4 class="items__body-size">Nhỏ</h4>
                                 </div>
                             </div>
                         </a>
@@ -286,10 +312,12 @@
                                 <div class="items__body">
                                     <h4 class="items__body-heading">SB502 - Shiba Inu Màu Nâu Đỏ</h4>
                                     <ul class="items__body-lists">
-                                        <li class="items__body-list">Giống: Cái</li>
+                                        <li class="items__body-list js__sex">Giống: Cái</li>
                                         <li class="items__body-list">Tuổi: 02 tháng</li>
                                     </ul>
                                     <h4 class="items__body-price">Giá: 9.000.000 VND</h4>
+                                    <h4 class="items__body-color">Vàng</h4>
+                                    <h4 class="items__body-size">Lớn</h4>
                                 </div>
                             </div>
                         </a>
@@ -350,6 +378,8 @@
         </div>
      </section>
         <!-- Kết thúc section7 -->
-    
+
+        <!-- Phần js -->
+    <script src="./main.js"></script>
 </body>
 </html>
