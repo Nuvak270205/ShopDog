@@ -3,6 +3,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const items9 = document.querySelectorAll('.section9__list-img');
     const indexs9 = document.querySelectorAll('.index__list-box');
     const customer = document.querySelector('.section9__customer-img');
+    const section9_right = document.querySelector('.section9__list-right');
+    const section9_left = document.querySelector('.section9__list-left');
     
     let section9__count = items9[1].clientWidth;  
     let section9__lenght = customer.clientWidth; 
@@ -38,22 +40,27 @@ document.addEventListener('DOMContentLoaded', () => {
         indexs9[count].classList.add('index__list-active');
     }
 
-    function slideRight() {
-        if (count < totalItems - 1) {
-            updateSlide(count + 1);
-        }
-    }
-
     function slideLeft() {
+        clearInterval(autoslide);
         if (count > 0) {
             updateSlide(count - 1);
         }
+        autoslide = setInterval(slideRight, 4000);
+    }
+    function slideRight() {
+        clearInterval(autoslide);
+        if (count < totalItems - 1) {
+            updateSlide(count + 1);
+        } else {
+            updateSlide(0); 
+        }
+        autoslide = setInterval(slideRight, 4000);
     }
 
   
     let hasListenerAdded = false;
 
-
+    let autoslide = setInterval(slideRight, 4000);
    
     window.addEventListener('scroll', () => {
         if (isInViewport(customer) && !hasListenerAdded) {
@@ -65,6 +72,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     slideLeft();
                 }
             });
+            section9_right.addEventListener('click', slideRight);
+            section9_left.addEventListener('click', slideLeft);
             hasListenerAdded = true; 
         }
     });
